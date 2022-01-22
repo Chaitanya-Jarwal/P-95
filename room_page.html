@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Chatting Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="room.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="btn btn-info" onclick="logout()" style="background-color: rgb(148, 0, 57); border-radius: 20px; margin-right: 900px;">Logout</button>
+<br>
+<br>
+<br>
+<center>
+		<h1 class="head">	
+			<img src="PikPng.com_notification-icon-png_746387.png" id="logo" height="70" width="90">
+			LetsChat
+		</h1>
+		<h3 id="user_name"></h3>
+		<div>
+			<label>#Add Room:</label>
+			<input type="text" id="room_name" class="form-control" placeholder="#Room Name" style="color: tomato; font-weight: bold;">
+		</div>
+		<button class="btn btn-info" onclick="addroom()">#Add Room</button>
+		<br>
+		<h3>#TRENDINGROOMS</h3>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="room_page.js"></script>
+</body>
+</html>

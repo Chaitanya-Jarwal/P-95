@@ -1,0 +1,17 @@
+#head{
+ text-align: left;
+ align-content: flex-start;
+ background: linear-gradient(rgb(255, 38, 0), #ffd900);
+}
+body{
+    background: linear-gradient(blue,cyan,white);
+    background: url("http://sfwallpaper.com/images/yellow-background-7.jpg");
+    text-align: center;
+}
+#user_name{
+    width: 220px;
+    margin-left:850px;
+}
+#heading{
+    color: crimson;
+}
